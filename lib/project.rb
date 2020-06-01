@@ -4,8 +4,8 @@ class Project
     @title = title
     @backers = []
   end
-  def add_backer(pjct)
-    pjct= Project.new
-    @backers << pjct
+  def add_backer(bkr)
+    bkr= Backer.new
+    @backers << bkr
   end
 end
