@@ -6,6 +6,6 @@ class Project
   end
   def add_backer(bkr)
     self.backers << Backer.new(bkr)
-    self.backers.last = bkr
+    self.backers = bkr
   end
 end
