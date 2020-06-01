@@ -1,3 +1,11 @@
 class Project
-  attr_reader :title
-  def initialize(name)
+  attr_reader :title, :backers
+  def initialize(title)
+    @title = title
+    @backers = []
+  end
+  def add_backer(pjct)
+    pjct= Project.new
+    @backers << pjct
+  end
+end
