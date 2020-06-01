@@ -5,7 +5,7 @@ class Project
     @backers = []
   end
   def self.add_backer(bkr)
-    bkr= Backer.new(bkr)
+    bkr = Backer.new(bkr)
     self.backers << bkr
   end
 end
